@@ -255,6 +255,8 @@ abstract class Model_Abstract_Record extends Model_Abstract_ORM
      */
     public function delete()
     {
+        if (!$this->_loaded) return null;
+
         if (!empty(static::$_archiveDatabase) AND static::$_autoArchiveEnabled)
         {
             $this->_archive('delete');

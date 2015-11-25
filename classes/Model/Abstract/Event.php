@@ -5,6 +5,8 @@
 
 /**
  * Class Model_Abstract_Event
+ *
+ * @property string $date_start
  */
 abstract class Model_Abstract_Event extends Model_Abstract_Entity
 {
@@ -22,13 +24,13 @@ abstract class Model_Abstract_Event extends Model_Abstract_Entity
      * @param string $date
      * @return Model_Abstract_Event
      */
-    abstract public function olderThan($date);
+    abstract public function olderOrEqualThan($date);
 
     /**
      * @param string $date
      * @return Model_Abstract_Event
      */
-    abstract public function newerThan($date);
+    abstract public function newerOrEqualThan($date);
 
     /**
      * @param string $order

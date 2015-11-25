@@ -12,8 +12,8 @@
  * @property string $email
  * @property string $password
  * @property int $logins
- * @property datetime $last_login
- * @property datetime $created
+ * @property int $last_login
+ * @property int $created
  */
 class Model_Abstract_User extends Model_Abstract_User_Core
 {

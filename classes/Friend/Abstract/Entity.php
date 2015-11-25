@@ -9,6 +9,11 @@
 abstract class Friend_Abstract_Entity extends Friend_Abstract
 {
     /**
+     * @var Controller_Entity
+     */
+    protected $_controller;
+
+    /**
      * @var Model_Abstract_Entity|null
      */
     protected $_entity = null;

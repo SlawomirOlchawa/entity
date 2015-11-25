@@ -10,7 +10,7 @@
  * @license    http://kohanaframework.org/license
  *
  * @property int $logins
- * @property datetime $last_login
+ * @property int $last_login
  */
 abstract class Model_Abstract_User_Core extends Model_Abstract_Entity
 {
